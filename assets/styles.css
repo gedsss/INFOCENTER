@@ -7,6 +7,10 @@ body {
     min-width: 320px; /* Largura mínima para dispositivos muito pequenos */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Animações (mantidas iguais) */
 @keyframes subir {
      from {
@@ -105,6 +109,10 @@ body {
     width: clamp(30px, 6vw, 40px);
 }
 
+.menu ul li img:hover {
+    opacity: 0.7;
+}
+
 .escrito {
     text-decoration: none;
     font-size: clamp(1rem, 2vw, 1.25rem);
@@ -193,7 +201,7 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-.mapa-section {
+#mapa-section {
     background-color: #EBEBEB;
     padding: 60px 20px;
     display: flex;
@@ -285,6 +293,7 @@ body {
 .servico img {
     width: 90%;
     transition: transform 0.3s ease;
+    box-shadow: 5px 7px 5px rgba(0,0,0,0.5);
 }
 
 .servico img:hover {
@@ -299,15 +308,16 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-.galeria-section {
+#produtos-section {
     margin-top: 50px;
     background-color: #EBEBEB;
     padding: 40px 20px;
     display: flex;
     justify-content: center;
+    padding-bottom: 130px;
 }
 
-.galeria-body {
+.produtos-body {
     width: 100%;
     max-width: 1300px;
     display: flex;
@@ -315,7 +325,7 @@ body {
     align-items: center;
 }
 
-.galeria-titulo h1 {
+.produtos-titulo h1 {
     font-family: 'Helvetica Neue', sans-serif;
     font-style: italic;
     font-size: 70px;
@@ -325,26 +335,85 @@ body {
     text-align: center;
 }
 
-.galeria-grid {
+.produtos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     width: 100%;
 }
 
-.galeria-grid img {
+.prdutos-grid img {
     width: 100%;
     height: 250px;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 7px 5px rgba(0,0,0,0.5);
     transition: transform 0.3s ease;
 }
 
-.galeria-grid img:hover {
+.produtos-grid img:hover {
     transform: scale(1.05);
 }
 
+.footer {
+    background-color: #322886;
+    color: white;
+    padding: 40px 20px 20px 20px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ccc;
+}
+
+.footer-social a img {
+    height: 30px;
+    margin: 0 10px;
+    transition: opacity 0.3s;
+}
+
+.footer-social a img:hover {
+    opacity: 0.7;
+}
+
+.footer-copy {
+    margin-top: 20px;
+    font-size: 0.875rem;
+    color: #ccc;
+}
+
+.footer-social #whatsapp {
+    height: 40px;
+}
 
 
 /* Media Queries específicas */
