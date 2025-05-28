@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -31,7 +31,7 @@
                 <div class="header-bg-area">
                     <div class="bg-content-area">
                         <p class="main-conte">PROCURA POR UMA <br><span><img src="assets/images/traço.png" alt="seta á direita"/>GRÁFICA?<img src="assets/images/traço.png" alt="seta á esquerda"/></span></p>
-                        <p class="sub-content">DEIXE NÓS NOS<br>APRESENTARMOS<br><img src="assets/images/seta.png"/></p>
+                        <p class="sub-content">DEIXE-NOS<br>APRESENTARMOS<br><img src="assets/images/seta.png"/></p>
                     </div>
                 </div>
            </div>
@@ -95,26 +95,41 @@
         <div class="produtos-body">
             <div class="produtos-titulo"><h1>Nossos Produtos</h1></div>
             <div class="produtos-grid">
-                <img src="/assets/images/images (1).jpeg" alt="Imagem 1">
-                <img src="/assets/images/images (1).jpeg" alt="Imagem 2">
-                <img src="/assets/images/images (1).jpeg" alt="Imagem 3">
-                <img src="/assets/images/images (1).jpeg" alt="Imagem 4">
-                <img src="/assets/images/images (1).jpeg" alt="Imagem 5">
-                <img src="/assets/images/images (1).jpeg" alt="Imagem 6">
-                <img src="/assets/images/images (1).jpeg" alt="Imagem 7">
-                <img src="/assets/images/images (1).jpeg" alt="Imagem 8">
+                <img src="/assets/images/images (1).jpeg" alt="Imagem 1" class="img-modal">
+                <img src="/assets/images/images (1).jpeg" alt="Imagem 2" class="img-modal">
+                <img src="/assets/images/images (1).jpeg" alt="Imagem 3" class="img-modal">
+                <img src="/assets/images/images (1).jpeg" alt="Imagem 4" class="img-modal">
+                <img src="/assets/images/images (1).jpeg" alt="Imagem 5" class="img-modal">
+                <img src="/assets/images/images (1).jpeg" alt="Imagem 6" class="img-modal">
+                <img src="/assets/images/images (1).jpeg" alt="Imagem 7" class="img-modal">
+                <img src="/assets/images/images (1).jpeg" alt="Imagem 8" class="img-modal">
             </div>
         </div>
     </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content-wrapper">
+          <span class="modal-close">&times;</span>
+          <div class="modal-title">
+            <p>Titulo aqui</p>
+          </div>
+          <img class="modal-content" id="modal-img">
+          <div class="modal-info">
+            <p>Descrição da imagem aqui</p>
+          </div>
+        </div>
+      </div>
+      
     
     <footer class="footer">
         <div class="footer-container">
           <div class="footer-logo">INFOCENTER</div>
           <div class="footer-links">
             <a href="#">Início</a>
-            <a href="#">Quem Somos</a>
-            <a href="#">Serviços</a>
-            <a href="#">Produtos</a>
+            <a href="#quem-somos-section">Quem Somos</a>
+            <a href="#mapa-section">Onde Estamos</a>
+            <a href="#servicos-section">Serviços</a>
+            <a href="#produtos-section">Produtos</a>
           </div>
           <div class="footer-social">
             <a href="https://www.instagram.com/infocentervg" target="_blank">
@@ -128,5 +143,6 @@
         </div>
       </footer>      
     
+      <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
