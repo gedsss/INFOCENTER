@@ -639,7 +639,7 @@ background-color:#FFF;
 @media (max-width: 576px) {
     .modal-content-wrapper {
         width: 90%;
-        height: 30%;
+        height: 40%;
         padding: 15px;
     }
     
