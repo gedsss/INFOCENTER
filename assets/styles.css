@@ -261,7 +261,6 @@ a, button {
 .servicos-body {
     width: 100%;
     min-height: 600px;
-    padding: 40px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -275,7 +274,6 @@ a, button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 40px;
 }
 
 .servicos-titulo {
