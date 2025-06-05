@@ -188,24 +188,30 @@ a, button {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     background-color: white;
 }
 
 .quem-somos-div {
     width: 800px;
-    height: inherit;
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .quem-somos-div h1 {
+  transform: translate(0, 15px);
     font-family: 'Helvetica Neue', sans-serif;
     font-style: italic;
     font-size: 70px;
     font-weight: 400;
     color: #322886
+}
+
+.quem-somos-desc {
+  flex: 1;
+  height: 800px;
+  width: 100%;
 }
 
 .quem-somos-div h3 {
@@ -215,6 +221,7 @@ a, button {
     color: #606060;
     line-height: 25px;
     font-family: "Montserrat", sans-serif;
+    padding-bottom: 100px;
 }
 
 #mapa-section {
@@ -548,6 +555,10 @@ background-color:#FFF;
     .quem-somos-div h3 {
         font-size: 1rem;
         line-height: 1.5;
+    }
+
+    body {
+      overflow-x: hidden;
     }
 }
 
