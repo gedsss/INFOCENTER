@@ -85,11 +85,16 @@ html {
     animation: esquerdadireita 1s ease-out;
 }
 
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
 .menu ul {
     display: flex;
     gap: clamp(15px, 3vw, 40px);
     margin: 0;
-    padding: 0 15px;
+    padding: 8px 15px;
     animation: direitaesquerda 1s ease-out;
 }
 
@@ -102,13 +107,21 @@ html {
     cursor: pointer;
 }
 
-.menu ul li img {
-    height: clamp(30px, 6vw, 40px);
-    width: clamp(30px, 6vw, 40px);
-}
-
 .menu ul li img:hover {
     opacity: 0.7;
+}
+
+#whatsapp {
+    height: clamp(40px, 6vw, 50px);
+    width: clamp(40px, 6vw, 50px);
+    transform: translate(0, -5px);
+}
+
+#instagram {
+    height: clamp(30px, 6vw, 40px);
+    width: clamp(30px, 6vw, 40px);
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .escrito {
@@ -289,13 +302,12 @@ html {
 }
 
 .servico img {
-    width: 90%;
+    width: 40%;
     transition: transform 0.3s ease;
-    box-shadow: 5px 7px 5px rgba(0,0,0,0.5);
 }
 
 .servico img:hover {
-    transform: scale(1.05);
+    transform: scale(1.10);
 }
 
 .servico.a p, .servico.b p, .servico.c p{
@@ -304,6 +316,7 @@ html {
     color: #606060;
     line-height: 25px;
     font-family: "Montserrat", sans-serif;
+    padding-bottom: 40px;
 }
 
 #produtos-section {
@@ -344,7 +357,6 @@ html {
     width: 100%;
     height: 300px;
     border-radius: 10px;
-    box-shadow: 5px 7px 5px rgba(0,0,0,0.2);
     transition: transform 0.3s ease;    
 }
 
@@ -369,8 +381,8 @@ html {
 
 .modal-content-wrapper {
 background-color:#FFF; 
-  width: 26%;
-  height: 40%;
+  width: 40%;
+  height: 57%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -481,6 +493,8 @@ background-color:#FFF;
 }
 
 .footer-social #whatsapp {
+    width: 45px;
+    transform: translate(0, 5px);
     height: 40px;
 }
 
@@ -520,3 +534,119 @@ background-color:#FFF;
         margin-top: 10vh;
     }
 }
+
+/* Adicione estas media queries no final do seu CSS */
+
+@media (max-width: 1200px) {
+    .quem-somos-div, .servicos-area, .produtos-body {
+      width: 90%;
+    }
+    
+    .modal-content-wrapper {
+      width: 40%;
+      height: 50%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .quem-somos-div h1, .mapa-titulo h1, 
+    .servicos-titulo h1, .produtos-titulo h1 {
+      font-size: 50px;
+    }
+    
+    .servico-conteudo {
+      flex-direction: column;
+      height: auto;
+    }
+    
+    .servico {
+      margin-bottom: 30px;
+      width: 80%;
+    }
+    
+    .modal-content-wrapper {
+      width: 60%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .quem-somos-body, .servicos-body {
+      height: auto;
+      padding: 50px 0;
+    }
+    
+    .quem-somos-div h1, .mapa-titulo h1, 
+    .servicos-titulo h1, .produtos-titulo h1 {
+      font-size: 40px;
+    }
+    
+    .quem-somos-div h3 {
+      font-size: 16px;
+      padding: 0 20px;
+    }
+    
+    .bg-content-area .sub-content {
+      margin-top: 30vh;
+    }
+    
+    .modal-content-wrapper {
+      width: 80%;
+      height: 60%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .menu ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    
+    .menu ul li {
+      margin: 5px 10px;
+    }
+    
+    .logo-name {
+      margin-bottom: 10px;
+    }
+    
+    .actual-header {
+      flex-direction: column;
+      height: auto;
+      padding: 15px 0;
+    }
+    
+    .quem-somos-div h1, .mapa-titulo h1, 
+    .servicos-titulo h1, .produtos-titulo h1 {
+      font-size: 30px;
+    }
+    
+    .bg-content-area p {
+      font-size: 1.2rem;
+    }
+    
+    .bg-content-area span {
+      font-size: 1.5rem;
+    }
+    
+    .modal-content-wrapper {
+      width: 90%;
+      height: 70%;
+      margin-bottom: 50px;
+    }
+    
+    .modal-title {
+      font-size: 30px;
+    }
+    
+    .modal-info {
+      font-size: 16px;
+    }
+  }
+  
+  /* Adicione isso para melhorar a experiência em dispositivos móveis */
+  @media (hover: none) {
+    .servico img:hover, .produtos-grid img:hover {
+      transform: none;
+    }
+  }
