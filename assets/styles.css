@@ -11,6 +11,11 @@ html {
   scroll-behavior: smooth;
 }
 
+a, button {
+  min-width: 48px;
+  min-height: 48px;
+}
+
 @keyframes subir {
      from {
     transform: translateY(70px);
@@ -239,7 +244,7 @@ html {
 
 .mapa-container {
     width: 100%;
-    height: 450px;
+    height: 300px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -502,151 +507,148 @@ background-color:#FFF;
 @media (max-width: 768px) {
     .actual-header {
         flex-direction: column;
+        padding: 15px;
         height: auto;
-        padding: 15px 0;
+    }
+
+    .menu {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 15px;
     }
 
     .menu ul {
-        margin-top: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
     }
 
-    .bg-content-area {
-        padding: 15vh 0;
+    #instagram, #whatsapp {
+        padding: 10px 0;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .quem-somos-body {
+        height: auto;
+        padding: 40px 20px;
     }
 
-    .quadrado {
-        flex: 1 1 100%;
+    .quem-somos-div {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .quem-somos-div h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .quem-somos-div h3 {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 768px) {
+    .servicos-body {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .servico-conteudo {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .servico {
+        margin-bottom: 40px;
+        width: 80%;
+    }
+
+    .servico img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .produtos-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .produtos-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 480px) {
-    .menu ul {
-        gap: 10px;
+    .produtos-grid {
+        grid-template-columns: 1fr;
     }
-
-    .menu ul li button {
-        font-size: 0.9rem;
-    }
-
-    .bg-content-area .sub-content {
-        margin-top: 10vh;
+    
+    .produtos-grid img {
+        height: 250px;
     }
 }
 
-/* Adicione estas media queries no final do seu CSS */
+@media (max-width: 992px) {
+    .modal-content-wrapper {
+        width: 70%;
+        height: 50%;
+    }
+}
 
-@media (max-width: 1200px) {
-    .quem-somos-div, .servicos-area, .produtos-body {
-      width: 90%;
-    }
-    
+@media (max-width: 576px) {
     .modal-content-wrapper {
-      width: 40%;
-      height: 50%;
-    }
-  }
-  
-  @media (max-width: 992px) {
-    .quem-somos-div h1, .mapa-titulo h1, 
-    .servicos-titulo h1, .produtos-titulo h1 {
-      font-size: 50px;
-    }
-    
-    .servico-conteudo {
-      flex-direction: column;
-      height: auto;
-    }
-    
-    .servico {
-      margin-bottom: 30px;
-      width: 80%;
-    }
-    
-    .modal-content-wrapper {
-      width: 60%;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .quem-somos-body, .servicos-body {
-      height: auto;
-      padding: 50px 0;
-    }
-    
-    .quem-somos-div h1, .mapa-titulo h1, 
-    .servicos-titulo h1, .produtos-titulo h1 {
-      font-size: 40px;
-    }
-    
-    .quem-somos-div h3 {
-      font-size: 16px;
-      padding: 0 20px;
-    }
-    
-    .bg-content-area .sub-content {
-      margin-top: 30vh;
-    }
-    
-    .modal-content-wrapper {
-      width: 80%;
-      height: 60%;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .menu ul {
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 10px 0;
-    }
-    
-    .menu ul li {
-      margin: 5px 10px;
-    }
-    
-    .logo-name {
-      margin-bottom: 10px;
-    }
-    
-    .actual-header {
-      flex-direction: column;
-      height: auto;
-      padding: 15px 0;
-    }
-    
-    .quem-somos-div h1, .mapa-titulo h1, 
-    .servicos-titulo h1, .produtos-titulo h1 {
-      font-size: 30px;
-    }
-    
-    .bg-content-area p {
-      font-size: 1.2rem;
-    }
-    
-    .bg-content-area span {
-      font-size: 1.5rem;
-    }
-    
-    .modal-content-wrapper {
-      width: 90%;
-      height: 70%;
-      margin-bottom: 50px;
+        width: 90%;
+        height: 30%;
+        padding: 15px;
     }
     
     .modal-title {
-      font-size: 30px;
+        font-size: 1.5rem;
     }
     
     .modal-info {
-      font-size: 16px;
+        font-size: 0.9rem;
     }
-  }
-  
-  /* Adicione isso para melhorar a experiência em dispositivos móveis */
-  @media (hover: none) {
-    .servico img:hover, .produtos-grid img:hover {
-      transform: none;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 40px 20px !important;
     }
-  }
+}
+
+@media (max-width: 480px) {
+    .mapa-container {
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 40px 20px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .mapa-container {
+        height: 250px;
+    }
+}
