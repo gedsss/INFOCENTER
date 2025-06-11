@@ -488,10 +488,8 @@ background-color:#FFF;
 .footer-links a:hover {
     color: #ccc;
 }
-
 .footer-social a img {
     height: 30px;
-    margin: 0 10px;
     transition: opacity 0.3s;
 }
 
@@ -519,25 +517,15 @@ section, div, header {
 
 @media (max-width: 768px) {
 
-    * {
-        overflow-x: hidden;
-    }
-
-     #header-section {
-        margin: -40px -20px -20px;
-    }
-
     #quem-somos-section {
-        margin: -80px -20px -20px;
+        margin-left: -10px;
+        margin-right: -10px;
     }
 
-    #servicos-section {
-        margin: -40px -20px -20px;
-    }
+
     .header-space{
        width: 100%;
-        height: 100vh;
-        background-attachment: scroll; 
+        height: 100vh; 
     }
 
     .bg-content-area{
@@ -555,6 +543,9 @@ section, div, header {
         width: 100%;
         justify-content: space-between;
         margin-top: 15px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        height: 100%;
     }
 
     .menu ul {
@@ -704,7 +695,7 @@ section, div, header {
 
 @media (max-width: 768px) {
     section {
-        padding: 40px 20px !important;
+        padding: 40px 10px !important;
     }
 }
 
@@ -724,13 +715,12 @@ section, div, header {
         flex-direction: column;
         gap: 10px;
     }
-}
 
-@media (max-width: 768px) {
-    section {
-        padding: 40px 20px !important;
+    .footer-social {
+        border: none;
     }
 }
+
 
 @media (max-width: 480px) {
     .mapa-container {
