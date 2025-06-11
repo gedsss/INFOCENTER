@@ -517,6 +517,10 @@ section, div, header {
 
 @media (max-width: 768px) {
 
+    * {
+        overflow-x: hidden;
+    }
+
     #quem-somos-section {
         margin-left: -10px;
         margin-right: -10px;
