@@ -121,7 +121,6 @@ a, button {
     height: clamp(40px, 6vw, 50px);
     width: clamp(40px, 6vw, 50px);
     transform: translate(0, -5px);
-    animation: direitaesquerda 1s ease-out;
 }
 
 #instagram {
@@ -129,7 +128,6 @@ a, button {
     width: clamp(30px, 6vw, 40px);
     padding-right: 30px;
     padding-left: 30px;
-    animation: direitaesquerda 1s ease-out;
 }
 
 .escrito {
@@ -559,7 +557,6 @@ section, div, header {
     #instagram, #whatsapp {
         margin: 0 auto;
         display: block;
-        animation: none;
     }
 
     #instagram {
