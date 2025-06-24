@@ -121,6 +121,7 @@ a, button {
     height: clamp(40px, 6vw, 50px);
     width: clamp(40px, 6vw, 50px);
     transform: translate(0, -5px);
+    animation: direitaesquerda 1s ease-out;
 }
 
 #instagram {
@@ -128,6 +129,7 @@ a, button {
     width: clamp(30px, 6vw, 40px);
     padding-right: 30px;
     padding-left: 30px;
+    animation: direitaesquerda 1s ease-out;
 }
 
 .escrito {
@@ -516,7 +518,7 @@ section, div, header {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
     * {
         overflow-x: hidden;
@@ -551,6 +553,7 @@ section, div, header {
         flex-direction: column;
         width: 100%;
         gap: 10px;
+        animation: esquerdadireita 1s ease-out;
     }
 
     #instagram, #whatsapp {
