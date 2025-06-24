@@ -558,6 +558,10 @@ section, div, header {
         display: block;
     }
 
+    #instagram {
+        padding-right: 45px;
+    }
+
 }
 
 @media (max-width: 992px) {
