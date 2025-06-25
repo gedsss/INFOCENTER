@@ -654,6 +654,13 @@ section, div, header {
     #header-section {
         margin: -40px -20px -20px;
     }
+
+    .modal-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-y: hidden;
+    }
 }
 
 @media (max-width: 1200px) {
